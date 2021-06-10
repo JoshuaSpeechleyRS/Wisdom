@@ -1,0 +1,127 @@
+$white: #fff;
+$black: #231F1F;
+$green: #48C1BB;
+$navy: #232B33;
+$darkgreen: #072622;
+$darkgrey: #f1f3f6;
+$middlegrey: #9E9E9E;
+$lightgrey: #f7f7f7;
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	background: $white;
+}
+
+%bold{
+	font-weight: 500;
+	font-style: normal;
+}
+
+h1, h2, h3, h4{
+  color: $black;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0px 0px 30px;
+}
+
+h1, h2{
+	font-family: 'Caladea', serif;
+	font-size: 50px;
+	line-height: 55px;
+	@media(max-width: 767px){
+		font-size: 30px;
+		line-height: 1.4;
+	}
+}
+
+h3{
+	font-family: 'Caladea', serif;
+	font-size: 40px;
+	line-height: 1.5;
+	@media(max-width: 767px){
+		font-size: 24px;
+		line-height: 1.4;
+	}
+}
+
+h4{
+	font-family: 'Caladea', serif;
+	font-size: 26px;
+	line-height: 1.5;
+	@media(max-width: 767px){
+		font-size: 18px;
+		line-height: 1.4;
+	}
+}
+
+h5{
+	font-family: Lato;
+	font-size: 120px;
+	font-weight: 300;
+	line-height: 1;
+	margin-bottom: 0px;
+	@media(max-width: 767px){
+		font-size: 80px;
+		line-height: 1.4;
+	}
+}
+
+h6{
+	font-family: 'Caladea', serif;
+	font-size: 13px;
+	letter-spacing: 0.2em;
+	line-height: 1.5;
+}
+
+p, li, input, label, td{	
+	font-size: 16px;
+	font-weight: 500;
+	color: $black;
+}
+
+strong, b, .bold{
+	font-weight: 500;
+}
+
+
+
+ol {
+	list-style-position: outside;
+	padding-left: 20px;
+	li{
+		padding-left: 10px;
+		padding-bottom: 15px;
+	}
+}
+
+blockquote{
+	p{
+		font-size: 30px;
+		line-height: 38px;
+	}
+}
+
+a{
+	color: $black;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	&:hover{
+		color: $green;
+	}
+}
+
+p a{
+	color: $black;
+	text-decoration: underline;
+	&:hover{
+		color: $green;
+	}
+}
